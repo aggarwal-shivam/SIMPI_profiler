@@ -1,0 +1,10 @@
+mpicc
+-g
+-O3
+-shared
+-fPIC
+-L/home/yash/papi-install/lib
+-lpapi
+-Wall
+-I/home/yash/papi-install/include
+

@@ -1,0 +1,7 @@
+# simpi
+
+The static library can be compiled with `make`. To generate trace for any MPI
+program, add PAPI and compiled static library to LD_PRELOAD. For example:
+
+$ export LD_PRELOAD=$HOME/papi-install/lib/libpapi.so:$HOME/mpich/lib/libsimpi.so
+$ mpirun -np 8 prog.x

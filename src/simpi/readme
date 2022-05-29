@@ -1,0 +1,2 @@
+compile with `mpicc -profile=simpi`. For assignment makefiles, change
+CFLAGS and COPT to have `-profile=simpi` at the end.

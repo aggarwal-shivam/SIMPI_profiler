@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -azhPe ssh --delete --exclude='.git' --filter="dir-merge,- .gitignore" . 172.27.19.19:~/git/CS633-2018-19-2-project/

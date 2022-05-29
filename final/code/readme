@@ -1,0 +1,20 @@
+# MPI Simulation
+
+See individual readmes of simpi and simulator for instructions on compiling
+them.
+
+General flow for obtaining trace and simulating a MPI Application:
+
+* run target program under tracer (LD_PRELOAD) with no hostfile but target
+  number of processes set.
+* concatenate all log files into one:
+  ```
+  $ cat *.log > agg.log
+  ```
+* run the simulator on this log:
+  ```
+  $ ./run-simulator.sh 64 ./hostfile ./agg.log
+  ```
+  Here 64 is the number of processes and hostfile is the target host
+  distribution we want.
+* The output is the time in seconds

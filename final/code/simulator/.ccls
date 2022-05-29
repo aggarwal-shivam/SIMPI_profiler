@@ -1,0 +1,20 @@
+clang++
+%cpp -std=c++11
+%h -x
+%h c++-header
+%c %cpp -pthread
+-I/home/yash/ns3/include/ns3.29
+-Wall
+-Werror
+-fPIC
+-DNS3_BUILD_PROFILE_DEBUG
+-DNS3_ASSERT_ENABLE
+-DNS3_LOG_ENABLE
+-DHAVE_SYS_IOCTL_H=1
+-DHAVE_IF_NETS_H=1
+-DHAVE_NET_ETHERNET_H=1
+-DHAVE_PACKET_H=1
+-DHAVE_SQLITE3=1
+-DHAVE_IF_TUN_H=1
+-DHAVE_GSL=1
+-DHAVE_CRYPTO=1

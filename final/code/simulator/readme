@@ -1,0 +1,23 @@
+# simulator
+
+The simulator can be compiled with `make`. After that the simulator can be run
+with:
+
+```
+$ ./simulator  --file=./hostfile --number=16 --logs=./logs-16
+```
+
+This just runs the simulator with no outputs. A complete log of all events
+taking place at a process can be obtained with:
+
+```
+$ export NS_LOG="MPINodeApplication"
+$ ./simulator  --file=./hostfile --number=16 --logs=./logs-16
+```
+
+The actual runtime can be thought of as the time when the last process stops.
+A helper script `run-simulator.sh` does exactly that:
+
+```
+$ ./run-simulator.sh 16 ./hostfile ./logs-16
+```

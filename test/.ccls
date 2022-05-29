@@ -1,0 +1,4 @@
+mpicc
+-g
+-O3
+-Wall
